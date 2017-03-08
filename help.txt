@@ -1,9 +1,0 @@
-Procedure for npm bower and angular with liteserver:
-npm init
-npm install lite-server --save-dev
-bower init
-bower install angular --save
-
-Make sure ng-app and ng-controller is in the scope.
-Make sure the script "start": "lite-server" is in the package.json
-import all script src
