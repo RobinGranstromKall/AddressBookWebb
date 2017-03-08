@@ -12,6 +12,10 @@ angular.module("app").config(["$routeProvider", "$locationProvider", function ($
             templateUrl: "app/contact/contact-detail.template.html",
             controller: "contactDetailController"
         })
+        .when("/contact", {
+        templateUrl: "app/contact/contact-create.template.html",
+        controller: "contactCreateController"
+    })
         .when("/categories", {
             templateUrl: "app/category/category-list.template.html",
             controller: "categoryListController"

@@ -6,7 +6,7 @@ angular.module("contact").factory("contactService",["$http", function ($http) {
             return $http.get("http://api-adressboken.azurewebsites.net/contact");
         },
         getContactById: function (id) {
-            
+
             return $http.get("http://api-adressboken.azurewebsites.net/contact/" + id);
         },
         getContacsByCategoryId: function (id) {
@@ -17,6 +17,9 @@ angular.module("contact").factory("contactService",["$http", function ($http) {
                 }
             });
             return c;
+        },
+        createContact: function (contact) {
+            $http.post("http://api-adressboken.azurewebsites.net/contact",contact);
         }
     };
 }]);

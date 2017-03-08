@@ -1,4 +1,4 @@
-<h1>Contact Details</h1>
+<h1>Create Contact</h1>
 <form>
     <table class="table table-stripped">
         <tr>
@@ -20,11 +20,11 @@
         <tr>
             <td><label for="category">Category</label></td>
             <td>
-                <select id="category" ng-options="name for category in categories">
+                <select id="category" ng-options="category as category.name for category in categories track by category.id" ng-model="selected">
                 </select>
             </td>
         </tr>
     </table>
-    <button class="btn btn-default" ng-click="createContact()">Update</button>
-    <a class="btn btn-default" href="/contacts">Abort</a>
+    <button class="btn btn-default" type="submit">Create</button>
+    <a class="btn btn-danger" href="/contacts">Abort</a>
 </form>
