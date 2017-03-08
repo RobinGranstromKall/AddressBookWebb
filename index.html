@@ -16,8 +16,9 @@
     <script src="app/app.service.js"></script>
     <script src="app/app.config.js"></script>
     <script src="app/app.controller.js"></script>
-    
+
     <script src="app/login/login.module.js"></script>
+    <script src="app/login/login.service.js"></script>
     <script src="app/login/login.controller.js"></script>
 
     <script src="app/contact/contact.module.js"></script>
@@ -36,7 +37,7 @@
 <body ng-app="app">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-1">
+        <div class="col-md-8 col-md-offset-2">
             <nav>
                 <ul class="nav nav-pills pull-right">
                     <li class=""><a href="/">Home</a></li>
@@ -44,7 +45,9 @@
                     <li><a href="/categories">Category</a></li>
                 </ul>
             </nav>
-            <div ng-view class="col-md-6 col-md-offset-1">
+            <div class="row">
+                <div ng-view class="col-md-6 col-md-offset-3">
+                </div>
             </div>
         </div>
     </div>

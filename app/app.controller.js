@@ -1,5 +1,5 @@
 angular.module("app").
-controller("appController", ["$scope", "appService", "appServiceFactory", function($scope, appService, appServiceFactory) {
+controller("appController", ["$scope", "appService", "appService", function($scope, appService, appService) {
 
 }]);
 
