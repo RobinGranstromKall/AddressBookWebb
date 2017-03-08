@@ -1,0 +1,23 @@
+<h1>Contacts</h1>
+<table class="table table-stripped ">
+    <thead>
+    <tr>
+        <th class="text-center">First Name</th>
+        <th class="text-center">Last Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">Phone Number</th>
+        <th class="text-center">Category</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="contact in contacts" ng-click="goToContact(contact.id)">
+        <td>{{contact.firstname}}</td>
+        <td>{{contact.lastname}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.phone}}</td>
+        <td>{{contact.categoryId}}</td>
+    </tr>
+    </tbody>
+
+    <a class="btn btn-default pull-right" href="/contact/">Add contact</a>
+</table>
