@@ -15,10 +15,14 @@ angular.module("app").config(["$routeProvider", "$locationProvider", function ($
         .when("/contact", {
         templateUrl: "app/contact/contact-create.template.html",
         controller: "contactCreateController"
-    })
+        })
+        .when("/login", {
+            templateUrl: "app/contact/contact-create.template.html",
+            controller: "contactCreateController"
+        })
         .when("/categories", {
-            templateUrl: "app/category/category-list.template.html",
-            controller: "categoryListController"
+            templateUrl: "app/login/login.template.html",
+            controller: "loginController"
         })
         .when("/category/:categoryId", {
             templateUrl: "app/category/category-detail.template.html",

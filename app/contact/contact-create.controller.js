@@ -13,8 +13,12 @@ angular.module("contact").controller("contactCreateController", ["$scope", "$rou
                     phone:      $scope.contact.phone,
                     categoryid: $scope.contact.category.id
                 };
-                categoryService.createContact(newContact);
-                $location.path("/contacts/");
+                $scope.saving = true;
+                categoryService.createContact(newContact).then(function () {
+                    $scope.saving = false;
+                    $location.path("/contacts/");
+                })
+
             };
 
         });
